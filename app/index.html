@@ -117,15 +117,13 @@
 			</div>
 		</div>
 		<!-- MAIN -->
-		<main data-aos="fade" data-aos-delay="0">
+		<main data-aos="fade" data-aos-delay="0" class="z-index-1">
 
-			<div class="main-content over-hidden">
+			<div class="main-content over-hidden shadow-default">
 				<div class="container">
 					<div class="column-1 col-md-3 p-h-15">
-
 					</div>
 					<div class="column-2 col-md-9 p-h-15">
-						
 						<!-- bnr-slider -->
 						<div class="bnr-slider m-v-30">
 							<div class="bnr-carousel custom-prev-next flickity-btn-1">
@@ -284,37 +282,64 @@
 							</div>
 						</div>
 						<!-- ./short-tickets -->
+						
+
+
 					</div>
 				</div>
-
+				<hr class="dashed">
+				<div class="container">
+					<!-- empty-text -->
+					<div class="empty-text p-b-30 col-md-9 col-md-offset-3">
+						<p>Цена клика, как следует из вышесказанного, обуславливает рекламоноситель, не считаясь с затратами. Целевой сегмент рынка, как следует из вышесказанного, определяет сублимированный имидж предприятия. Ассортиментная политика предприятия поддерживает социометрический бюджет на размещение, осознав маркетинг как часть производства. Имидж позиционирует отраслевой стандарт. Идеология выстраивания бренда искажает мониторинг активности.</p>
+					</div>
+					<!-- ./empty-text -->
+				</div>
 			</div>
 			<!-- ./MAIN-CONTENT -->
 		</main>
 		<!-- ./MAIN -->
 		<!-- FOOTER -->
-		<footer id="footer" class="text-center-sm bg-color-2">
+		<footer id="footer" class="text-center-sm">
 			<div class="container">
-				<div class="footer-content clearfix p-v-30 color-white">
+				<div class="footer-content clearfix p-v-30 color-black">
 					<div class="row">
-						<div class="col-md-4 footer-plugin p-h-15 m-v-15">
-							<div class="plugin-content">
-								<img src="img/other/plugin-1.jpg" alt="" width="100%">
-							</div>
+						<div class="col-md-3 text-center header-logo p-h-15">
+							<a href="index.html" title="">
+								<div class="logo m-auto">
+									<h1 class="color-2 h-clear">Ticketboard.Ru</h1>
+									<p>Бесплатная доска объявлений</p>
+								</div>
+							</a>
 						</div>
-						<div class="col-md-5 footer-plugin p-h-15 m-v-15">
-							<div class="plugin-content">
-								<img src="img/other/plugin-2.jpg" alt="" width="100%">
-							</div>
+						<div class="col-md-6 p-h15 footer-menu hover-color-2 p-v-35 color-1">
+							<ul>
+								<li><a href="">Обратная связь</a></li>
+								<li><a href="">Наши партнеры</a></li>
+								<li><a href="">Часто задаваемые вопросы</a></li>
+								<li><a href="">Новости</a></li>
+								<li><a href="">Контакты</a></li>
+								<li><a href="">Правила сайта</a></li>
+							</ul>
 						</div>
-						<div class="col-md-3 footer-links p-h-15">
-							<span class="btn-def m-v-15 p-h-15 pie-flex-center box-xs-7 m-auto box-md-8"><div><a href="#" class="p-h-15">Вопросы</a></div></span>
-							<span class="btn-def m-v-15 p-h-15 pie-flex-center box-xs-7 m-auto box-md-8"><div><a href="#" class="p-h-15">Публичная оферта</a></div></span>
-							<span class="btn-def m-v-15 p-h-15 pie-flex-center box-xs-7 m-auto box-md-8"><div><a href="#" class="p-h-15">Договор о сотрудничестве</a></div></span>
-							<div class="footer-info m-v-15">
-								<p class="font-size-3 font-w-3">Тел.: +998 93 500 77 44 </p>
-								<p class="font-size-3 font-w-3">E-mail: info@dasms.uz</p>
-							</div>
-							
+						<div class="col-md-3 p-h-15 footer-socicons">
+							<h5>Мы в соц. сетях:</h5>
+							<ul class="list-inline">
+								<li><a href=""><img src="img/icons/telegram.png" alt=""></a></li>
+								<li><a href=""><img src="img/icons/facebook.png" alt=""></a></li>
+								<li><a href=""><img src="img/icons/vk.png" alt=""></a></li>
+								<li><a href=""><img src="img/icons/twitter.png" alt=""></a></li>
+							</ul>
+							<br>
+							<h5>Рассылка на лучшие предложения</h5>
+							<div class="search-nav-content clearfix m-v-10 color-black">
+									<form action="">
+										<div class="col-md-12 search-input">
+											<input type="text" name="" id="" placeholder="Email" style="height: 32px;">
+											<button type="submit" ><b>Подписаться</b></button>
+										</div>
+									</form>
+								</div>
 						</div>
 					</div>
 				</div>
@@ -323,17 +348,15 @@
 			<div class="footer-dev bg-color-3 color-white">
 				<div class="container">
 					<div class="row">
-						<div class="copyright col-md-6 p-v-30 p-h-15">
+						<div class="copyright col-md-6 p-v-10 p-h-15">
 							<p>Copyright ©
-								<span class="color-2">
-									<i><b>DA<span class="color-1">SMS</span></b></i>
-								</span>
+								<span class="color-2"></span>
 								<time id="copydate"></time>. Все права защищены</p>
 							<script>
 								copydate.innerText = new Date().getFullYear()
 							</script>
 						</div>
-						<div class="dev hidden-xs hidden-sm text-right-md col-md-6 p-v-30 p-h-15">
+						<div class="dev hidden-xs hidden-sm text-right-md col-md-6 p-v-10 p-h-15">
 							<p>
 								<a href="https://lifestyle.uz/" class="link" title="Создание и продвижение сайтов">Сайт разаботан в студии
 									<em>

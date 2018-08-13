@@ -266,7 +266,7 @@ html{
 	align-items: center;
 	height: inherit;
 	&>div:not([class*="box-"], [class*="col-"]){
-		width: 100%;
+		width: 90%;
 	}
 }
 .flex-ai-center{

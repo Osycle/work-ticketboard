@@ -13,21 +13,22 @@
 	color: rgba(black, 0.4);
 	min-height: 150px;
 	line-height: 170%;
+	background-color: $color-gray-1;
 	background-repeat: no-repeat;
 	background-position-y: center;
 	background-size: cover;
-}
-.footer-plugin{
-	min-height: 230px;
-}
-.footer-links{
-	.btn-def{
-		font-weight: 600;
-		font-size: 0.95em;
-		height: 38px;
-		white-space: normal;
+	h3,h4,h5{
+		color: rgba(black, 0.5);
 	}
-	@media (min-width: 992px) {
-		margin-top: 60px;
+	h5{
+		font-size: 0.95em;
+	}
+}
+.footer-menu{
+	ul{
+		columns: 2;
+	}
+	li{
+		margin: 5px 0;
 	}
 }
