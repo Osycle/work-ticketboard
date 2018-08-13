@@ -1,0 +1,33 @@
+/* 
+		_footer.scss
+*/
+
+/*
+										---FOOTER---
+*/
+
+
+
+#footer{
+	position: relative;
+	color: rgba(black, 0.4);
+	min-height: 150px;
+	line-height: 170%;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	background-size: cover;
+}
+.footer-plugin{
+	min-height: 230px;
+}
+.footer-links{
+	.btn-def{
+		font-weight: 600;
+		font-size: 0.95em;
+		height: 38px;
+		white-space: normal;
+	}
+	@media (min-width: 992px) {
+		margin-top: 60px;
+	}
+}

@@ -1,0 +1,144 @@
+/*
+	_content.css
+*/
+
+
+
+
+//--bnr-slider
+.bnr-slider{
+	$slider-height: 400px;
+	position: relative;
+	overflow: hidden;
+	.flickity-slider{
+		transform: inherit !important;
+	}
+	.bnr-carousel{
+		background-color: white;
+		background-repeat: no-repeat;
+		position: relative;
+		background-size: cover;
+		background-position: center center;
+	}
+	figure{
+		height: $slider-height;
+		transition: all 2s ease;
+		left: 0 !important;
+		.img{
+			position: absolute;
+			height: 100%;
+	    background-size: cover;
+	    background-position: center;
+	   	filter: blur(0px) brightness(120%);
+			transition: 
+									transform 1.2s ease,
+									opacity 1s ease-in-out,
+									filter 1s linear 0.5s;
+		}
+		opacity: 0;
+		&.is-selected{
+			z-index: 1;
+			opacity: 1;
+			.img{
+				filter: blur(0);
+			}
+		}
+	}
+
+	.carousel-content{
+		.pie-flex-center{
+			height: $slider-height;
+		}
+	}
+	//Навигация
+	.flickity-page-dots{
+
+	}
+	// Стрелки
+	.flickity-prev-next-button{
+		color: $color-1;
+	}
+	//Кастомные стрелки
+	.carousel-prev-next{
+		width: ingerit;
+		//((100/12)*8)+%
+		left: 50%;
+		transform: translateX(-50%);
+		.bg-wrapper{
+			bottom: 0;
+			position: absolute;
+			background-color: $color-2;
+			height: 40px; 
+		}
+		.next, .prev{
+			color: white;
+			width: 50%;
+			height: 100%;
+			text-align: center;
+			transform: translateY(-50%);
+			transition: all 0.3s ease;
+			.fa{
+				padding-top: 10px;
+			}
+			&:hover{
+				background-color: $color-3;
+				color: white;
+			}
+		}
+		.prev{
+			left: 0;
+		}
+		.next{
+			right: 0;
+		}
+	}
+
+	@media(max-width: 991px) {
+		font-size: 0.9em;
+		figure{
+			height: 200px;
+			.carousel-content{
+				display: none;
+			}
+		}
+		.bg-wrapper{
+			width: 100%;
+			transform: scale(0.8);
+		}
+		.carousel-prev-next{
+			width: 100%;
+		}
+	}
+	@media(max-width:370px) {
+		word-wrap: break-word;
+	}
+}
+
+
+
+//--bnr-info
+.bnr-info{
+	$block-height: 180px;
+	position: relative;
+	.pie-flex-center{
+		height: $block-height;
+	}
+	.img-content{
+		width: 100%;
+		position: absolute;
+	}
+	.img{
+		height: $block-height;
+	}
+}
+//-short-tickets
+.short-tickets-items{
+	.img{
+		background-position: center;
+		background-size: cover;
+		height: 150px;
+	}
+	figure{
+		margin-bottom: 30px;
+	}
+}
