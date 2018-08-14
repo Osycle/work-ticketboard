@@ -15,7 +15,7 @@
 		setTimeout(function() { AOS.refresh(); }, 1);
 
 
-		/*SELECT2*/
+		/* SELECT2 */
 		if ( $(".js-select").length )
 			$(".js-select").select2({
 				placeholder: "Выберите...",
@@ -37,11 +37,53 @@
 			placement: 'bottom',
 			html: true
 		});
+		
+		/* datepicker */
+		( function( factory ) {
+			if ( typeof define === "function" && define.amd ) {
+				// AMD. Register as an anonymous module.
+				define( [ "../widgets/datepicker" ], factory );
+			} else {
+				// Browser globals
+				factory( jQuery.datepicker );
+			}
+		}( function( datepicker ) {
+
+		datepicker.regional.ru = {
+			closeText: "Закрыть",
+			prevText: "&#x3C;Пред",
+			nextText: "След&#x3E;",
+			currentText: "Сегодня",
+			monthNames: [ "Январь","Февраль","Март","Апрель","Май","Июнь",
+			"Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь" ],
+			monthNamesShort: [ "Янв","Фев","Мар","Апр","Май","Июн",
+			"Июл","Авг","Сен","Окт","Ноя","Дек" ],
+			dayNames: [ "воскресенье","понедельник","вторник","среда","четверг","пятница","суббота" ],
+			dayNamesShort: [ "вск","пнд","втр","срд","чтв","птн","сбт" ],
+			dayNamesMin: [ "Вс","Пн","Вт","Ср","Чт","Пт","Сб" ],
+			weekHeader: "Нед",
+			dateFormat: "dd.mm.yy",
+			firstDay: 1,
+			isRTL: false,
+			showMonthAfterYear: false,
+			yearSuffix: "" };
+		datepicker.setDefaults( datepicker.regional.ru );
+
+		return datepicker.regional.ru;
+
+		} ) );
+		$.datepicker.regional[ "ru" ];
+
     /*rating appraise*/
     $(document).on("click", ".rating-appraise li", function(){
       $(this).siblings().removeClass("cheсked")
       $(this).addClass("cheсked");
-    });
+		});
+		$( "#datepicker" ).datepicker({
+			showOtherMonths: true,
+      selectOtherMonths: true,
+			inline: true
+		});
 		/*FANCYBOX*/
 		if ($("[data-fancybox]").length != 0)
 			$("[data-fancybox]").fancybox({
@@ -222,45 +264,6 @@
 
 
 
-		/*short-gallery-carousel*/
-		if( $(".short-gallery-carousel .carousel-items figure").length )
-			$(".short-gallery-carousel .carousel-items").flickity({
-				imagesLoaded: true,
-				autoPlay: 3300,
-				pauseAutoPlayOnHover: true,
-				arrowShape: arrowStyle,
-				initialIndex: 0,
-				friction: 1,
-				selectedAttraction: 1,
-				prevNextButtons: true,
-				draggable: false,
-				wrapAround: true,
-				pageDots: false,
-				contain: false,
-				percentPosition: true,
-				cellSelector: 'figure',
-				cellAlign: "center"
-			});
-		$(".custom-prev-next").map(function(i, el){
-			flickityPrevNext(el);
-		})
-		function tabSyncClick( tabClickContent ){
-			if($(tabClickContent).length != 0){
-				$(tabClickContent).on("click", ".nav-item", function(){
-					var index = $(this).index();
-					$(tabClickContent).find(".nav-item").parent().map(function(i, el){
-						$(el).children().removeClass("is-selected").eq(index).addClass("is-selected");
-					})
-				})
-			}
-		}
-		tabSyncClick(".short-productions");
-		tabSyncClick(".short-interesting");
-
-
-
-
-
 
 
 		window.carouselArticle = function() {
@@ -313,34 +316,19 @@
 
 
 
-    // Прибавление-убавление значении
-    (function(){
-      var form = $("[data-counter]") || null;;
-      if( !form )
-        return;
-      var cntfactor = form.attr("data-counter")*1;
-
-      $(document).on("click", "[data-counter-btn]", function(){
-        var cntVal;
-        var cntInput = $(this).closest( form ).find("[data-counter-input]");
-        
-        cntVal = (cntInput.val()*1);
-
-        if( $(this).hasClass("plus") )
-          cntVal = cntVal + cntfactor;
-        if( $(this).hasClass("minus") & cntVal > 0 )
-          cntVal = cntVal - cntfactor;
-        if( isNaN( cntVal ) || cntVal < 0) cntVal = 0;
-        cntInput.val( cntVal ).attr("value", cntVal)
-      })
-      $(".cnt-input").on( "keypress", function(e){
-        //console.log(this, e);
-      } )
-
-    })();
-
-
-
+		//Адаптивность в моб.версии
+		if(checkSm())
+			$(".column-1").before( $(".column-2") );
+		//Соглания с условиями
+		if( $(["data-checkdeactive"]).length )
+		$("[data-checkdeactive]").map(function( i, el ){
+			var deactiveClass = $($(el).attr("data-checkdeactive"));
+			$(el).on("change",checkedToggle);
+			function checkedToggle(){
+				!el.checked ? deactiveClass.addClass("deactive") : deactiveClass.removeClass("deactive");
+			}
+			checkedToggle();
+		})
 
 
 

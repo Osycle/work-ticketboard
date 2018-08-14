@@ -352,7 +352,7 @@ ul[class*="sub"]{
 	box-shadow: 0 0 20px 0 black;
 	background-color: darken($color-3, 5%);
 	.min-menu-logo{
-		padding: 10px 0;
+		padding: 12px 0;
 		width: 100%;
 		.img{
 			background-size: contain;
@@ -469,101 +469,6 @@ ul[class*="sub"]{
 }
 
 
-.modal-content{
-	background: rgba(white, 1);
-	color: black;
-	border-radius: 0;
-}
-.modal-body{
-	margin-top: 30px;
-	@extend .clearfix;
-	.form-content{
-		margin-top: -30px;
-	}
-	h1, h2{
-		line-height: 20px;
-		margin: 0 !important;
-	}
-}
-.modal-footer{
-	border: 0;
-}
-.form-footer{
-	margin: 10px 0;
-	button{
-		padding: 12px 20px;
-		margin-left: auto;
-		box-shadow: 0 0 4px 0px rgba(black, 0.5);
-	}
-}
-.form-modal{
-	h1, h2, h3{
-		color: $color-1;
-	}
-
-	form{
-		margin-top: -20px;
-		.textarea{
-			display: block;
-			margin-top: 10px;
-			margin-bottom: 5px;
-			color: #333;
-			textarea{
-				resize: none;
-				background-color: #f0f0f0;
-				padding: 0.5em;
-				border-top: 2px solid $color-1;
-				transition: all 0.3s ease-in-out;
-				height: 60px;
-				&:focus{
-					//height: 60px;
-				}
-			}
-			*{
-				width: 100%;
-				&:focus{
-					outline: none;
-				}
-			}
-		}//textarea
-	}
-	input, textarea{
-		border: 1px solid rgba($color-1, 0.5);
-		border-radius: 1px;
-		width: 100%;
-		&:focus{
-			border-color: $color-1;
-		}
-	}
-	.form-control{
-		//box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 152, 175, 0.6);
-		box-shadow: none;
-	}
-	button{
-		background-color: $color-1;
-	}
-
-	.modal-content{
-		color: $color-1;
-		margin-top: 70px;
-		//background-image: url( "../img/other/texture-1.png" ) ;
-		@media only screen and (max-width: 991px){
-			width: 100%;
-		}
-		
-		@media only screen and (max-width: 767px){
-			width: 100%;
-		}
-
-
-	}
-	.modal-body{
-		padding: 0 30px;
-		@extend .clearfix;
-	}
-
-}
-
 .bar{
 	width: 60px;
 	height: 45px;
@@ -655,5 +560,59 @@ textarea.form-control{
 }
 
 
+#signin-modal{
+	max-width: 600px;
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 15px;
+	.fancybox-close-small:after{
+		border-radius: 15px;
+		background-color: $color-1;
+		color: white;
+	}
+	.signin-form{
+		padding-top: 60px;
+		padding-bottom: 60px;
+		position: relative;
+		.moses{
+			position: absolute;
+			height: 100%;
+			width: 1px;
+			top: 0;
+			right: 0;
+			.circle{
+				text-align: center;
+				font-size: 0.95em;
+				background-color: white;
+				@extend .trans-center;
+				border-radius: 50%;
+				width: 55px;
+				height: 55px;
+			}
+			&:before, &:after{
+				@extend .claf;
+				border-right: 1px solid $color-gray-2;
+				height: 35%;
+			}
+			&:after{
+				top: auto; top: initial;
+				bottom: 0;
+			}
 
+		}
+	}
+	.iagree-text{
+		font-size: 0.8em;
+		font-weight: 600;
+		line-height: 100%;
+	}
+	.modal-col{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+.deactive{
+	opacity: 0.5;
+	pointer-events: none;
+}
 

@@ -266,7 +266,7 @@ html{
 	align-items: center;
 	height: inherit;
 	&>div:not([class*="box-"], [class*="col-"]){
-		width: 90%;
+		width: 100%;
 	}
 }
 .flex-ai-center{
@@ -652,6 +652,9 @@ html{
 }
 .va-bottom{
 	vertical-align: bottom;
+}
+.va-super{
+	vertical-align: super;
 }
 
 .over-hidden{
