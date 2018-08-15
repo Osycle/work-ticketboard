@@ -265,7 +265,7 @@ html{
 	display: flex;
 	align-items: center;
 	height: inherit;
-	&>div:not([class*="box-"], [class*="col-"]){
+	&>div:not([class*="box-"]):not([class*="col-"]){
 		width: 100%;
 	}
 }

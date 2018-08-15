@@ -154,6 +154,9 @@ header{
 	width: 260px;
 	padding-top: 50px ;
 	padding-bottom: 50px ;
+	h1{
+		font-size: 28px;
+	}
 }
 
 
@@ -354,6 +357,9 @@ ul[class*="sub"]{
 	.min-menu-logo{
 		padding: 12px 0;
 		width: 100%;
+		h1{
+			font-size: 25px;
+		}
 		.img{
 			background-size: contain;
 			background-position: center left;
@@ -364,6 +370,14 @@ ul[class*="sub"]{
 		padding: 5px 0;
 		.bar{
 			transform: scale(0.8);
+		}
+	}
+	@media (max-width: 395px) {
+		.min-menu-logo{
+			h1{
+				font-size: 20px;
+			}
+			padding: 18px 0;
 		}
 	}
 }

@@ -120,7 +120,6 @@
 .bnr-info{
 	$block-height: 180px;
 	position: relative;
-	
 	.pie-flex-center{
 		height: $block-height;
 	}
@@ -147,10 +146,37 @@
 		.img{
 			filter: blur(3px);
 		}
-
-		
 	}
 }
+.bnr-info-article{
+	$block-height: 400px;
+	position: relative;
+	.pie-flex-center{
+		height: $block-height;
+	}
+	.img-content{
+		width: 100%;
+		position: absolute;
+	}
+	.img{
+		height: $block-height;
+		background-size: cover;
+		background-position: center;
+	}
+	@media (max-width:991px) {
+		height: auto;
+		.pie-flex-center, .img{
+			height: 360px;
+		}
+		.img{
+			filter: blur(3px);
+		}
+	}
+}
+
+
+
+
 //-short-tickets
 .short-tickets-items{
 	.img{
@@ -272,5 +298,12 @@ hr.dashed{
 			line-height: 100%;
 			padding-right: 7px;
 		}
+	}
+}
+
+
+.tickets-form{
+	select{
+		min-width: 280px;
 	}
 }
