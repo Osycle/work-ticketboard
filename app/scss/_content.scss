@@ -211,6 +211,11 @@ hr.dashed{
 		border-bottom: 1px solid rgb(163, 163, 163);
 		padding-bottom: 5px;
 	}
+	@media (min-width: 992px ){
+		.wrapper{
+			height: 400px;
+		}
+	}
 }
 .calendar #datepicker{
 	margin-top: 5px;
@@ -300,10 +305,42 @@ hr.dashed{
 		}
 	}
 }
-
-
 .tickets-form{
 	select{
 		min-width: 280px;
+	}
+}
+
+
+
+/* platform-article */
+.is-click{
+	&~.none{
+		display: block;
+	}
+}
+.phone-content{
+	@media (max-width:991px) {
+		display: block;
+		margin: 15px;
+	}
+}
+[data-hidephone]{
+	&:active{
+		&~.article-phone{
+			letter-spacing: 1.5px;
+		}
+	}	
+}
+.article-phone{
+	margin: 0 15px;
+	transition: all 0.3s ease-in-out;
+	text-decoration: underline;
+}
+
+/* feedback */
+.feedback-form{
+	input, textarea{
+		border-color: $color-1;
 	}
 }

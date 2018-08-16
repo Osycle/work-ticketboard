@@ -531,34 +531,33 @@ textarea.form-control{
 
 
 //search nav
-.search-nav-content{
+.search-nav-content, .input-btnin{
 	position: relative;
 	color: $color-2;
 	.fa{
 		color: $color-2;
 		transform: scale(0.8);
 	}
-	form{
-		.search-input{
-			width: 100%;
-			height: inherit;
-			margin-left: auto;
-			border: 1px solid $color-1;
-			border-radius: 15px;
-			overflow: hidden;
-		}
-		input{
-			border: 0;
-			transition: all 0.3s ease;
-			background-color: rgba(white, 0.3);
-			height: 100%;
-			width: 100%;
-			padding: 0 15px;
-			&:focus{
-				//box-shadow: inset 0 0 0px black, -5px -5px 0px 0px darken(white, 12%), 5px 5px 0px 0px $color-2;
-			}
+	.search-input{
+		width: 100%;
+		height: inherit;
+		margin-left: auto;
+		border: 1px solid $color-1;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+	input{
+		border: 0;
+		transition: all 0.3s ease;
+		background-color: rgba(white, 0.3);
+		height: 100%;
+		width: 100%;
+		padding: 0 15px;
+		&:focus{
+			//box-shadow: inset 0 0 0px black, -5px -5px 0px 0px darken(white, 12%), 5px 5px 0px 0px $color-2;
 		}
 	}
+	
 	button{
 		background-color: $color-1;
 		color: white;
@@ -571,6 +570,14 @@ textarea.form-control{
     height: 100%;
     border: 0;
 	}
+	&.reverse{
+		.search-input{
+			border: 1px solid $color-2;
+		}
+		button{
+			background-color: $color-2;
+		}
+	}
 }
 
 
@@ -579,50 +586,131 @@ textarea.form-control{
 	padding-right: 0;
 	padding-left: 0;
 	border-radius: 15px;
-	.fancybox-close-small:after{
-		border-radius: 15px;
-		background-color: $color-1;
-		color: white;
-	}
-	.signin-form{
-		padding-top: 60px;
-		padding-bottom: 60px;
-		position: relative;
-		.moses{
-			position: absolute;
-			height: 100%;
-			width: 1px;
-			top: 0;
-			right: 0;
-			.circle{
-				text-align: center;
-				font-size: 0.95em;
-				background-color: white;
-				@extend .trans-center;
-				border-radius: 50%;
-				width: 55px;
-				height: 55px;
-			}
-			&:before, &:after{
-				@extend .claf;
-				border-right: 1px solid $color-gray-2;
-				height: 35%;
-			}
-			&:after{
-				top: auto; top: initial;
-				bottom: 0;
-			}
-
+	.moses{
+		position: absolute;
+		height: 100%;
+		width: 1px;
+		top: 0;
+		right: 0;
+		.circle{
+			text-align: center;
+			font-size: 0.95em;
+			background-color: white;
+			@extend .trans-center;
+			border-radius: 50%;
+			width: 55px;
+			height: 55px;
+		}
+		&:before, &:after{
+			@extend .claf;
+			border-right: 1px solid $color-gray-2;
+			height: 35%;
+		}
+		&:after{
+			top: auto; top: initial;
+			bottom: 0;
+		}
+		@media (max-width: 991px){
+			display: none;
 		}
 	}
 	.iagree-text{
 		font-size: 0.8em;
 		font-weight: 600;
 		line-height: 100%;
+		padding-left: 5px;
 	}
 	.modal-col{
+		position: relative;
+		height: 360px;
 		padding-left: 40px;
 		padding-right: 40px;
+	}
+	.reg-step-3{
+		.modal-col{
+			height: 120px ;
+		}
+		.iagree-text{
+			font-size: 1em;
+		}
+	}
+}
+
+#addadvert-modal{
+	max-width: 360px;
+	padding-right: 0;
+	padding-left: 0;
+	border-radius: 15px;
+	.iagree-text{
+		font-size: 0.8em;
+		font-weight: 600;
+		line-height: 100%;
+	}
+	.modal-col{
+		position: relative;
+		height: 360px;
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	.addadvert-step-1{
+		.modal-col{
+			height: 175px ;
+		}
+		.iagree-text{
+			font-size: 1em;
+		}
+	}
+}
+.iagree-text{
+	a{
+		text-decoration: underline;
+	}
+}
+.fancymodal{
+	
+	@media (max-width: 991px){
+		input.pie-form-control[type="checkbox"]{
+			width: 20px;
+			height: 20px;
+		}
+		.modal-col{
+			height: auto !important;
+			margin: 15px 0;
+			padding-bottom: 15px;
+			border-bottom: 1px dotted gray;
+		}
+	}
+}
+
+
+
+
+
+
+
+input[type="checkbox"]:checked{
+	&~.ckeckbox-style-1, &~label .ckeckbox-style-1{
+		background-color: $color-1;
+	}		
+}
+.ckeckbox-style-1{
+	width: 12px;
+	height: 12px;
+	display: block;
+	//transition: all 0.05s ease;
+	background-color: transparent;
+	position: relative;
+	border-radius: 3px;
+	&:hover{
+		cursor: pointer;
+	}
+	&:before{
+		@extend .claf;
+		@extend .trans-center;
+		width: 18px;
+		height: 18px;
+		border-radius: 3px;
+		border: 2px solid $color-1;
 	}
 }
 .deactive{
@@ -630,3 +718,6 @@ textarea.form-control{
 	pointer-events: none;
 }
 
+a:focus{
+	outline: none;
+}

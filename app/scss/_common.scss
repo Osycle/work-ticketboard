@@ -191,14 +191,13 @@ html{
 */
 .breadcrumb{
 	background: transparent;
-	font-weight: 600;
 	&, a, .active{ 		
 		transition: all 0.3s ease-in;
 		font-size: em(15, 16);
 		a:hover{
 			transform: translateY(-5px);
 			text-decoration: none;
-			color: $color-3;
+			color: $color-2;
 		}
 		&.reverse{
 			a{
@@ -213,21 +212,21 @@ html{
 		}
 	}
 	a{
-		color: $color-2;
+		color: $color-1;
 	}
 	.active{
 		a{
-			color: lighten($color-2, 5%);
+			color: lighten($color-1, 5%);
 			font-weight: 700;
 		}
 	}
 	& > li + li:before{
 
-		color: rgba(black, 0.4);
+		color: $color-1;
 		font-family: FontAwesome;
-		content: " / ";
+		content: " > ";
 		font-size: 0.9em;
-		margin:0  15px;
+		margin:0  5px;
 	}
 	li{
 		vertical-align: baseline;
@@ -929,10 +928,10 @@ hr{
 		text-align: center ;
 	}
 	p{
-		font-size: 0.9em;
+		font-size: 1em;
 		font-weight: 400;
 		position: relative;
-		line-height: 125%;
+		line-height: 150%;
 	}
 	ul:not([class]){
 		text-align: left;
@@ -1112,6 +1111,7 @@ input.pie-form-control{
 textarea.pie-form-control{
 	resize: none;
 	padding: 7px 12px;
+	min-height: 120px;
 }
 select.pie-form-control{
 	height: 34px;
