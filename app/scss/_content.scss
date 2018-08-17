@@ -290,9 +290,11 @@ hr.dashed{
 
 
 
+
 //--bar-platform
 .bar-platform-items{
 	li{
+		list-style-image: none !important;
 		padding: 7px 15px;
 		border-top: 1px solid $color-gray-1;
 		border-bottom: 1px solid $color-gray-1;
@@ -338,9 +340,82 @@ hr.dashed{
 	text-decoration: underline;
 }
 
-/* feedback */
-.feedback-form{
-	input, textarea{
+
+
+.fc-border-color-1{
+	textarea, input{
+		border-color: $color-1;	
+	}
+}
+
+/* addadvert */
+.addadvert-form-content{
+	@media (min-width:992px) {
+		.comments p{
+			margin: 45px 0;
+		}
+		.loadfile .btn-def{
+			margin: 55px 0;
+		}
+
+	}
+}
+.form-select-opacity{
+	input{
+		height: 31px;
 		border-color: $color-1;
+	}
+
+	button.ui-datepicker-trigger{
+		@extend .btn-res;
+		@extend .btn-def;
+		@extend .col-md-4;
+		@extend .col-xs-4;
+		@extend .col-md-offset-1;
+		height: 31px;
+		@media (max-width:991px){
+			float: right;
+		}
+	}
+	.select2-container--default{
+		.select2-selection--single{
+			height: 31px;
+			border-radius: 15px;
+			border: 1px solid $color-1;
+			background-color: transparent;
+			&:focus{
+				outline: none;
+			}
+			.select2-selection__rendered{
+				color: gray;
+			}
+			.select2-selection__arrow b{
+				border-color: $color-1 transparent transparent transparent;
+			}
+		}
+	}
+	@media (max-width:991px) {
+		input, button.ui-datepicker-trigger{
+			height: 35px;
+		}
+	}
+}
+.btn-file-content{
+	.inputfile{
+		display: none;
+		input{
+		}
+	}
+}
+//addadvert-select
+.addadvert-select-items{
+	figure{
+		height: 150px;
+		.img-content{
+			height: 100%;
+		}
+		.img{
+			height: 150px;
+		}
 	}
 }

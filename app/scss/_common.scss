@@ -1091,8 +1091,10 @@ hr{
 	//border-bottom-color: white;
 	background-color: transparent;
 	//border-radius: 30px;
-	color: inherit;
-	color: currentColor;
+	&:not([class*='color-']){
+		color: inherit;
+		color: currentColor;
+	}
 	border-radius: 20px;
 	@include placeholder-color($color-gray-2);
 	&:focus, &:active{
@@ -1114,7 +1116,7 @@ textarea.pie-form-control{
 	min-height: 120px;
 }
 select.pie-form-control{
-	height: 34px;
+	height: 35px;
 	padding: 5px 12px;
 	background-color: transparent;
 	&:focus{
@@ -1125,6 +1127,11 @@ select.pie-form-control{
 		padding: 30px;
 		font-weight: 600;
 		background-color: transparent;
+	}
+}
+@media (max-width:991px) {
+	textarea.pie-form-control, input.pie-form-control{
+	 	//width: 100%;
 	}
 }
 //modal-control

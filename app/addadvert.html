@@ -17,7 +17,6 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
 	<!-- Блок скрытых элементов -->
 	<div class="hide">
@@ -162,7 +161,7 @@
 							<input type="text" class="pie-form-control box-xs-10 m-v-5" placeholder="Телефон">
 							<input type="password" class="pie-form-control box-xs-10 m-v-5" placeholder="Пароль">
 							<input type="password" class="pie-form-control box-xs-10 m-v-5" placeholder="Повторите пароль">
-							<div class="captcha text-center input-btnin reverse m-v-15 clearfix">
+							<div class="captcha text-center input-btnin reverse m-v-15 clearfix row">
 								<img src="img/other/captcha.png" alt="">
 								<div class="col-md-12 search-input m-v-15">
 									<input type="text" name="" placeholder="Код с картинки" style="height: 32px;">
@@ -325,295 +324,217 @@
 						</div>
 					</div>
 					<div class="column-2 col-md-9 p-h-15">
-						<!-- bnr-info-article -->
-						<div class="bnr-info-article m-v-30">
-							<div class="relative radius-3 over-hidden">
-								<div class="img-content">
-									<div class="bg-shadow fuller bg-color-black opacity-2 z-index-1"></div>
-									<div class="img" style="background-image: url('img/other/bnr-info-article.jpg');"></div>
-								</div>
-								<div class="desc-content p-h-15 z-index-1 relative pie-flex-center">
-									<div class="box-md-7 box-xs-10 p-h-15 color-white">
-										<h2 class="m-t-0">Экспериментальный маркетинг: гипотеза и теории</h2>
-										<p>Promotion-кампания концентрирует конкурент. PR методически стабилизирует рыночный медиаплан. Надо сказать, что ребрендинг концентрирует принцип восприятия. Целевой сегмент рынка определяет SWOT-анализ. </p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- ./bnr-info-article -->
+					<!-- breadcrumb-container -->
+					<div class="breadcrumb-container hidden-xs hidden-sm">
+						<ol class="breadcrumb p-h-0 m-b-0 m-t-15">
+							<li><a href="">Главная</a></li>
+							<li class="active"><a href="">Подать объявление</a></li>
+						</ol>
+					</div>
 
-						<!-- short-tickets -->
-						<div class="short-tickets">
-							<div class="entry-header">
-								<h1 class="color-2">Большой театр</h1>
-								<p class="color-1">Москва ул. 123 з.123</p>
-							</div>
-							<div class="tickets-form m-v-15 p-b-15">
-								<form action="">
-									<select name="" class="js-select search-hide">
-										<option value="">Событие</option>
-										<option value="">Событие 2</option>
-										<option value="">Событие 3</option>
-									</select>
+
+					<div class="addadvert hide">
+						<div class="entry-header">
+							<h2 class="color-2">Размещение объявления</h2>
+						</div>
+						<div class="addadvert-form-content form-select-opacity cleafix fc-border-color-1">
+							<div class="col-md-6 p-h-15">
+
+								<form action="" method="get" accept-charset="utf-8">
+
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Город</div>
+											<div class="col-md-7 p-h-15">
+												<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+													<option value="">Москва</option>
+													<option value="">Москва 2</option>
+													<option value="">Москва 3</option>
+												</select>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Площадка</div>
+											<div class="col-md-7 p-h-15">
+												<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+													<option value=""></option>
+													<option value="">Пункт 1</option>
+													<option value="">Пункт 2</option>
+												</select>
+												<span class="info-error"><small>Нет нужной площадки</small></span>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Дата</div>
+											<div class="col-md-7 p-h-15">
+												<input type="" name="" id="datepicker-select" class="pie-form-control col-xs-7">
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Мероприятия</div>
+											<div class="col-md-7 p-h-15">
+												<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+													<option value=""></option>
+													<option value="">Пункт 1</option>
+													<option value="">Пункт 2</option>
+												</select>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Время</div>
+											<div class="col-md-7 p-h-15">
+												<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+													<option value=""></option>
+													<option value="">Пункт 1</option>
+													<option value="">Пункт 2</option>
+												</select>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Сектор</div>
+											<div class="col-md-7 p-h-15">
+												<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+													<option value=""></option>
+													<option value="">Пункт 1</option>
+													<option value="">Пункт 2</option>
+												</select>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Ряд/ложа</div>
+											<div class="col-md-7 p-h-15">
+												<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+													<option value=""></option>
+													<option value="">Пункт 1</option>
+													<option value="">Пункт 2</option>
+												</select>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Места</div>
+											<div class="col-md-7 p-h-15">
+												<input type="" name="" class="pie-form-control box-xs-10">
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Номинальная стоимость</div>
+											<div class="col-md-7 p-h-15">
+												<input type="" name="" class="pie-form-control box-xs-10">
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Цена продажи</div>
+											<div class="col-md-7 p-h-15">
+												<input type="" name="" class="pie-form-control box-xs-10 text-right color-4" value="-50%">
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-5 p-h-15">Тип билета</div>
+											<div class="col-md-7 p-h-15">
+												<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+													<option value=""></option>
+													<option value="">Пункт 1</option>
+													<option value="">Пункт 2</option>
+												</select>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row loadfile">
+											<div class="col-md-5 p-h-15">
+												<div class="btn-file-content m-v-15">
+													<input type="file" name="" id="file-1" class="inputfile box-xs-10" onchange="this.nextElementSibling.getElementsByClassName('file-1-name')[0].textContent = this.files[0].name">
+													<label for="file-1" role="button">
+														<span class="btn-def over-hidden">
+															 <b class="btn-this file-1-name">Загрузить фото</b>
+														</span> 
+													</label>
+												</div>
+											</div>
+											<div class="col-md-7 p-h-15 hidden-xs hidden-sm">
+												<textarea name="" class="pie-form-control box-md-10" style="height: 150px;"></textarea>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row comments">
+											<div class="col-md-5 p-h-15">
+												<p class="m-v-15">Комментарии</p>
+											</div>
+											<div class="col-md-7 p-h-15">
+												<textarea name="" class="pie-form-control box-md-10" style="height: 150px;"></textarea>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="m-v-15 p-h-15">
+												<span class="inline-block box-xs-9 m-v-5">
+													<input type="checkbox" class="hide va-middle inline-block p-r-5" id="addadvert-iagree-1">
+													<label class="va-middle p-r-10" for="addadvert-iagree-1">
+														<span class="ckeckbox-style-1"></span>
+													</label>
+													<a href="#" class="va-middle opacity-7"><b>Согласен  с условиями оферты</b></a>
+												</span>
+												<span class="inline-block box-xs-9 m-v-5">
+													<input type="checkbox" class="hide va-middle inline-block p-r-5" id="addadvert-iagree-2">
+													<label class="va-middle p-r-10" for="addadvert-iagree-2">
+														<span class="ckeckbox-style-1"></span>
+													</label>
+													<a href="#" class="va-middle opacity-7"><b>С условиями размещения ознакомлен</b></a>
+												</span>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-7 p-h-15">
+												<div class="captcha text-center input-btnin clearfix">
+													<img src="img/other/captcha.png" alt="">
+													<div class="col-md-12 search-input m-t-15">
+														<input type="text" name="" placeholder="Код с картинки" style="height: 32px;">
+														<button class="p-h-20"><b>ок</b></button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="m-v-15 clearfix row">
+											<div class="col-md-7 clearfix p-h-15">
+												<span class="btn-def box-md-10 m-v-10 inline-block">
+													<button type="submit">Разместить объявление</button>
+												</span>
+											</div>
+										</div>
+
 								</form>
 							</div>
-							<div class="short-tickets-items boxes-3">
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-								<figure>
-									<a href="platform-one.html">
-										<div class="shadow-default relative radius-3 over-hidden">
-											<div class="img-content">
-												<div class="img" style="background-image: url('img/other/ticket.jpg')"></div>
-											</div>
-											<div class="desc-content p-h-15">
-												<h3 class="color-2">Царская невеста</h3>
-												<p>Большой театр</p>
-												<p>&NonBreakingSpace;</p>
-												<p>25 Июля, 20: 00</p>
-												<p>&NonBreakingSpace;</p>
-												<hr>
-												<div class="clearfix m-b-10">
-													<big>Объявлений: 30</big>
-												</div>
-											</div>
-										</div>
-									</a>
-									</figure>
-
-							</div>
-							<div class="pagination-div col-xs-12 m-v-15 text-center-sm p-b-15">
-								<ul class="pagination">
-									<li><a href="">1</a></li>
-									<li class="active"><a href="">2</a></li>
-									<li><a href="">3</a></li>
-									<li><a href="">4</a></li>
-									<li><a href="">5</a></li>
-									<li><a href="">6</a></li>
-									<li><a href="">...</a></li>
-									<li class="pagination-end"><a href="">Последняя</a></li>
-								</ul>
-							</div>
 						</div>
-						<!-- ./short-tickets -->
+					</div>
+
+					<div class="addadvert-select">
+						<div class="entry-header">
+							<h2 class="color-2">Выберите пакет услуг</h2>
+						</div>
+						<div class="addadvert-select-items">
+							<form action="" method="get" accept-charset="utf-8">
+								<figure class="shadow-default hide">
+									<div class="col-md-10">
+										<div class="desc-content">
+											<h4>Обычная продажа</h4>
+											<p>Бесплатно</p>
+										</div>
+									</div>
+									<div class="input-content col-xs-">
+										<input type="radio" name="">
+									</div>
+								</figure>
+								<figure>
+									<div class="img-content col-md-3">
+										<div class="img" style="background-image: url('img/other/event.jpg');"></div>
+									</div>
+									<div class="desc-content col-md-9 p-h-15">
+										<div class="cap">
+											<h4>Быстрая продажа</h4>
+											<p></p>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+									</div>
+								</figure>
+								
+							</form>
+						</div>
+					</div>
 						
 
 
@@ -667,7 +588,7 @@
 							<div class="search-nav-content clearfix m-v-10 color-black">
 									<form action="">
 										<div class="col-md-12 search-input">
-											<input type="text" name="" id="" placeholder="Email" style="height: 32px;">
+											<input type="text" name="" placeholder="Email" style="height: 32px;">
 											<button type="submit" ><b>Подписаться</b></button>
 										</div>
 									</form>
