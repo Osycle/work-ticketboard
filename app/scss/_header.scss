@@ -688,36 +688,3 @@ textarea.form-control{
 
 
 
-input[type="checkbox"]:checked{
-	&~.ckeckbox-style-1, &~label .ckeckbox-style-1{
-		background-color: $color-1;
-	}		
-}
-.ckeckbox-style-1{
-	width: 10px;
-	height: 10px;
-	display: block;
-	//transition: all 0.05s ease;
-	background-color: transparent;
-	position: relative;
-	border-radius: 3px;
-	&:hover{
-		cursor: pointer;
-	}
-	&:before{
-		@extend .claf;
-		@extend .trans-center;
-		width: 18px;
-		height: 18px;
-		border-radius: 3px;
-		border: 2px solid $color-1;
-	}
-}
-.deactive{
-	opacity: 0.5;
-	pointer-events: none;
-}
-
-a:focus{
-	outline: none;
-}

@@ -407,15 +407,170 @@ hr.dashed{
 		}
 	}
 }
-//addadvert-select
-.addadvert-select-items{
-	figure{
-		height: 150px;
-		.img-content{
-			height: 100%;
+
+
+/* addadvert-type */
+.addadvert-type-items{
+	label{
+		width: 100%;
+	}
+	.wrapper{
+		overflow: hidden;
+		height: 100%;
+		border-radius: 15px;
+	}
+	h4{
+		color: $color-2;
+		padding-bottom: 10px;
+		margin: 0;
+		&:before{
+			@extend .claf;
+			height: 1px;
+			background-color: rgba($color-gray-2, 0.5);
+			width: 220px;
+			bottom: 0;
+			top: inherit;
 		}
-		.img{
-			height: 150px;
+	}
+	.img{
+		background-position: left;
+		background-size: cover;
+		height: 200px;
+	}
+
+	.desc-content{
+		//padding: 10px 15px;
+		font-size: 0.9em;
+		.cap{
+			margin: 10px 0;
+			p{
+				color: black;
+				font-size: 1em;
+			}
+		}
+		p{
+			color: $color-gray-2;
+		}
+	}
+	.radio-style-1{
+		margin: auto;
+	}
+	@media (max-width:991px)  {
+		.flex{
+			flex-diretion: column;
+		}
+	}
+}
+
+
+
+
+
+/* cabinet */
+.cabinet-addadvert-items{
+	figure{
+		&:nth-child(1){
+			margin-top: 10px;
+		}
+	}
+	.wrapper{
+		overflow: hidden;
+		height: 100%;
+		border-radius: 15px;
+	}
+	.desc-content{
+	  overflow: auto;
+    height: 100%;
+	}
+	h4{
+		color: $color-2;
+	}
+	p{
+		line-height: 110%;
+	}
+	.img{
+		background-position: left;
+		background-size: cover;
+		height: 200px;
+	}
+
+	.desc-content{
+		//padding: 10px 15px;
+		font-size: 0.9em;
+		.cap{
+			margin: 10px 0;
+		}
+	}
+	@media (min-width: 992px) {
+		.col-1{
+			height: 200px;
+			.wrapper{
+				border-bottom-right-radius: 0;
+				border-top-right-radius: 0;
+			}
+		}
+		.col-2{
+			height: 200px;
+			.wrapper{
+				border-bottom-left-radius: 0;
+				border-top-left-radius: 0;
+			}
+		}
+
+	}
+	@media (max-width: 991px)  {
+		.col-1{
+			.wrapper{
+				border-bottom-right-radius: 0;
+				border-bottom-left-radius: 0;
+			}
+		}
+		.col-2{
+			.wrapper{
+				box-shadow: 0 3px 20px -10px black;
+				border-top-right-radius: 0;
+				border-top-left-radius: 0;
+			}
+		}
+		.flex{
+			flex-diretion: column;
+		}
+	}
+}
+.panel-addadvert{
+	[class*="btn-content"]{
+		margin: 5px 0;
+	}
+	button{
+		@extend .btn-res;
+		color: $color-1;
+		font-size: 0.9em;
+		font-weight: 600;
+		&:hover{
+			color: $color-special-1;
+			.fa{
+				opacity: 1;
+				color: inherit;
+			}
+		}
+	}
+	.fa, b{
+		vertical-align: middle;
+	}
+	.fa{
+		padding-right: 7px;
+		color: black;
+		line-height: 120%;
+		font-size: 16px;
+		opacity: 0.5;
+	}
+	.btn-content-close{
+		.fa{
+			font-size: 18px;
+			opacity: 1;
+		}
+		*{
+			color: red !important;
 		}
 	}
 }

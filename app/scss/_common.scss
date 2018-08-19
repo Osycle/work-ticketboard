@@ -5,11 +5,11 @@
 */
 
 $color-1: #0098d0 !default;
-$color-2: #fb8c00 !default;
+$color-2: #FF9E20 !default;
 $color-3: #1976D3 !default;
 $color-4: #ec407a !default;
 $color-5: #d58e32 !default;
-$color-special-1: #3EA82C;
+$color-special-1: #8bc34a;
 
 $font-family-1: "Open Sans";
 $font-family-2: "sans-serif";
@@ -757,12 +757,14 @@ a:hover, a:active, a:focus{
 	text-decoration: none;
 	color: inherit;
 }
+
 img,
+a:focus,
 button, 
 button:hover, 
 button:active, 
 button:focus{
-	outline: 0;
+	outline: none;
 }
 img{
 	max-width: 100%;
@@ -1134,69 +1136,65 @@ select.pie-form-control{
 	 	//width: 100%;
 	}
 }
-//modal-control
-input.modal-control, textarea.modal-control{
-	background-color: white;
-	border-radius: 1px;
-	padding: 10px 15px;
-	border:2px solid $color-1;
-	width: 100%;
-	z-index: 1; 
-	position: relative;
-	@extend .focus-style-1;
-	& ~ label{
-		&, i{
-			transition: all 0.3s ease;
-		}
-	}
-	&:focus, &:checked, &[filled]{
-		& ~ label{
-			font-size: 0.7em;
-			transform: translateY(-50%);
-			top: 50%;
-			left: 50px;
-			i{
-				opacity: 1;
-			}
-		}
-	}
-	&[filled]{
-		& ~ label{
-			opacity: 0;
-		}
-	}
-}
-.input-skullcap-content{
-	position: relative;
-	.input-skullcap{
-		background-color: $color-2;
-		color: white;
-		left: 0;
-		top: 0;
-		height: 100%;
-		position: absolute;
 
-	}
+.deactive{
+	opacity: 0.5;
+	pointer-events: none;
 }
 
-.modal-default{
-	input{
-		~ label{
-			@extend .trans-v-center;
-		}
+//Стиль галок
+//checkbox
+input[type="checkbox"]:checked{
+	&~.checkbox-style-1, &~label .checkbox-style-1{
+		background-color: $color-1;
+	}		
+}
+.checkbox-style-1{
+	width: 10px;
+	height: 10px;
+	display: block;
+	//transition: all 0.05s ease;
+	background-color: transparent;
+	position: relative;
+	border-radius: 3px;
+	&:hover{
+		cursor: pointer;
 	}
-	textarea{
-		~ label{
-			top: 10px;
-		}
-	}
-	label{
-		z-index: 1;
-		pointer-events: none;
-		position: absolute;
-		left: 30px;
+	&:before{
+		@extend .claf;
+		@extend .trans-center;
+		width: 18px;
+		height: 18px;
+		border-radius: 3px;
+		border: 2px solid $color-1;
 	}
 }
-textarea.modal-control{
-	height: 107px;
+//radio
+input[type="radio"]:checked{
+	&~.radio-style-1, &~label .radio-style-1{
+		background-color: $color-1;
+	}		
 }
+.radio-style-1{
+	width: 10px;
+	height: 10px;
+	display: block;
+	//transition: all 0.05s ease;
+	background-color: transparent;
+	position: relative;
+	border-radius: 50%;
+	&:hover{
+		cursor: pointer;
+	}
+	&:before{
+		@extend .claf;
+		@extend .trans-center;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		border: 2px solid $color-1;
+	}
+}
+
+
+

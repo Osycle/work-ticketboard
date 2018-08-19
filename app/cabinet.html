@@ -17,7 +17,6 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
 	<!-- Блок скрытых элементов -->
 	<div class="hide">
@@ -162,7 +161,7 @@
 							<input type="text" class="pie-form-control box-xs-10 m-v-5" placeholder="Телефон">
 							<input type="password" class="pie-form-control box-xs-10 m-v-5" placeholder="Пароль">
 							<input type="password" class="pie-form-control box-xs-10 m-v-5" placeholder="Повторите пароль">
-							<div class="captcha text-center input-btnin reverse m-v-15 clearfix">
+							<div class="captcha text-center input-btnin reverse m-v-15 clearfix row">
 								<img src="img/other/captcha.png" alt="">
 								<div class="col-md-12 search-input m-v-15">
 									<input type="text" name="" placeholder="Код с картинки" style="height: 32px;">
@@ -325,67 +324,232 @@
 						</div>
 					</div>
 					<div class="column-2 col-md-9 p-h-15">
-						<!-- breadcrumb-container -->
-						<div class="breadcrumb-container hidden-xs hidden-sm">
-							<ol class="breadcrumb p-h-0 m-b-0 m-t-15">
-								<li><a href="">Главная</a></li>
-								<li class="active"><a href="">Большой театр</a></li>
-							</ol>
-						</div>
-						<!-- platform-article -->
-						<div class="platform-article">
-							<div class="entry-header cleafix m-v-15 relative">
-								<div class="inline-block va-middle">
-									<h1 class="color-2">Большой театр</h1>
-									<p class="color-1">Москва ул. 123 з.123</p>
+					<!-- breadcrumb-container -->
+					<div class="breadcrumb-container hidden-xs hidden-sm">
+						<ol class="breadcrumb p-h-0 m-b-0 m-t-15">
+							<li><a href="">Главная</a></li>
+							<li class="active"><a href="">Личный кабинет</a></li>
+						</ol>
+					</div>
+
+
+					<div class="cabinet">
+						<div class="entry-header color-2 clearfix">
+							<h3>Личный кабинет</h3>
+							<br>
+							<div class="row">
+								<div class="col-md-5 p-h-15 m-t-10">
+									<p><b>Ваши объявления</b></p>
 								</div>
-								<div class="inline-block va-middle m-h-30 m-v-15">
-									<span class="btn-def">
-										<a href="img/other/schema.jpg" data-fancybox="">Схема зала</a>
+								<div class="col-md-4 text-right-md p-h-15">
+									<span class="btn-def reverse changecolor-none color-white inline-block">
+										<a href="javascript:;" class="p-h-15"><i class="fa fa-plus p-r-5"></i>Разместить новое объявление</a>
 									</span>
 								</div>
 							</div>
+						</div>
+						<div class="cabinet-addadvert-items figure-m-v-30">
+							<form action="" method="get" accept-charset="utf-8">
 
-							<div class="text-content text-left">
-								<div class="text-center-sm">
-									<b>Продавец:</b> Александр 
-									<span class="color-1 m-h-15 phone-content">
-										<a href="javascript:;" title="" data-hidephone="#article-phone">Показать телефон</a>
-										<span class="article-phone none" id="article-phone"><b>+99890 789 45 12</b></span>
-									</span> 
-									<div class="float-right-md">
-										<span class="color-4">-50% </span>&nbsp;&nbsp;<span class="color-1"><b>2 500 руб</b></span>
-									</div>
-								</div>
-								<div class="col-md-4 col-xs-12 article-img float-right-md p-v-30">
-									<!-- Ссылка на оригинальный размер картины-->
-									<a href="img/other/event.jpg" title="" data-fancybox>
-										<!-- Средний размер картины -->
-										<img src="img/other/event.jpg" alt="" align="right">
-									</a>
-								</div>
-								<br>
-								<p><b>Мероприятие:</b> Лебединое озеро</p>
-								<p><b>Дата:</b> 23 июля 2018</p>
-								<p><b>Время:</b> 19-00 </p>
-								<p><b>Сектор:</b> Бельэтаж</p>
-								<p><b>Ряд/ложа:</b> 5</p>
-								<p><b>Место:</b>3,5</p>
-								<br>
-								<p><b>Тип белета:</b> Пригласительный</p>
-								<p><b>Номинальная цена:</b> 5 000 руб.</p>
-								<p><b>Цена продажи:</b> 2 500 руб. </p>
-								<br>
-								<div class="m-v-15">
-									<p><b>Комментарии:</b> Стимулирование сбыта, как принято считать, традиционно тормозит медиамикс.</p>
-								</div>
-								<div class="m-v-15">
-									<p><b>Дата размещения: 06.07.2018 </b> <span class="float-right-md m-v-15"><b>Просмотров:7</b></span></p>
-								</div>
+								<figure>
+									<div class="row">
+										<div class="col-md-9 col-1 p-h-15">
+											<div class="wrapper shadow-default pie-flex-content">
+												<div class="img-content pie-md-flex-5 pie-xs-flex-12">
+													<div class="img" style="background-image: url('img/other/scene.jpg');"></div>
+												</div>
+												<div class="desc-content pie-md-flex-7 p-h-15 pie-xs-flex-12">
+													<h4>Быстрая продажа</h4>
+													<p><small>Бельэтаж</small></p>
+													<p><small>Ряд/ложа: 1</small></p>
+													<p><small>Место: 1,2,3</small></p>
+													<p>&NonBreakingSpace;</p>
+													<p>Большой театр</p>
+													<p>&NonBreakingSpace;</p>
+													<p>25 Июля, 20: 00</p>
+													<hr>
+													<div class="clearfix m-v-10">
+														<div class="col-xs-6 text-left color-4">
+															<p><big>-50%</big></p>
+														</div>
+														<div class="col-xs-6 text-right color-black">
+															<p><big><b>5 000 т.р</b></big></p>
+														</div>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div class="col-md-3 col-2 p-h-15">
+											<div class="wrapper shadow-default pie-flex-content">
+												<div class="panel-addadvert pie-md-flex-12 p-h-15 pie-xs-flex-12">
+										
+														<div class="btn-content-raise">
+															<span><button type="submit"><i class="fa fa-upload"></i><b>Поднять</b></button></span>
+														</div>
+														<div class="btn-content-activate">
+															<span><button type="submit"><i class="fa fa-refresh"></i><b>Активировать</b></button></span>
+														</div>
+														<div class="btn-content-edit">
+															<span><button type="submit"><i class="fa fa-pencil"></i><b>Редактировать</b></button></span>
+														</div>
+														<div class="btn-content-trash">
+															<span><button type="submit"><i class="fa fa-trash"></i><b>Снять с продажи</b></button></span>
+														</div>
+														<div class="btn-content-close p-t-10">
+															<span><button type="submit"><i class="fa fa-close"></i><b>Удалить</b></button></span>
+														</div>
 									
+												</div>	
+											</div>
+										</div>
+									</div>
+								</figure>
+								<figure>
+									<div class="row">
+										<div class="col-md-9 col-1 p-h-15">
+											<div class="wrapper shadow-default pie-flex-content">
+												<div class="img-content pie-md-flex-5 pie-xs-flex-12">
+													<div class="img" style="background-image: url('img/other/scene.jpg');"></div>
+												</div>
+												<div class="desc-content pie-md-flex-7 p-h-15 pie-xs-flex-12">
+													<h4>Быстрая продажа</h4>
+													<p><small>Бельэтаж</small></p>
+													<p><small>Ряд/ложа: 1</small></p>
+													<p><small>Место: 1,2,3</small></p>
+													<p>&NonBreakingSpace;</p>
+													<p>Большой театр</p>
+													<p>&NonBreakingSpace;</p>
+													<p>25 Июля, 20: 00</p>
+													<hr>
+													<div class="clearfix m-v-10">
+														<div class="col-xs-6 text-left color-4">
+															<p><big>-50%</big></p>
+														</div>
+														<div class="col-xs-6 text-right color-black">
+															<p><big><b>5 000 т.р</b></big></p>
+														</div>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div class="col-md-3 col-2 p-h-15">
+											<div class="wrapper shadow-default pie-flex-content">
+												<div class="panel-addadvert pie-md-flex-12 p-h-15 pie-xs-flex-12">
+										
+														<div class="btn-content-raise">
+															<span><button type="submit"><i class="fa fa-upload"></i><b>Поднять</b></button></span>
+														</div>
+														<div class="btn-content-activate">
+															<span><button type="submit"><i class="fa fa-refresh"></i><b>Активировать</b></button></span>
+														</div>
+														<div class="btn-content-edit">
+															<span><button type="submit"><i class="fa fa-pencil"></i><b>Редактировать</b></button></span>
+														</div>
+														<div class="btn-content-trash">
+															<span><button type="submit"><i class="fa fa-trash"></i><b>Снять с продажи</b></button></span>
+														</div>
+														<div class="btn-content-close p-t-10">
+															<span><button type="submit"><i class="fa fa-close"></i><b>Удалить</b></button></span>
+														</div>
+									
+												</div>	
+											</div>
+										</div>
+									</div>
+								</figure>
+								<figure>
+									<div class="row">
+										<div class="col-md-9 col-1 p-h-15">
+											<div class="wrapper shadow-default pie-flex-content">
+												<div class="img-content pie-md-flex-5 pie-xs-flex-12">
+													<div class="img" style="background-image: url('img/other/scene.jpg');"></div>
+												</div>
+												<div class="desc-content pie-md-flex-7 p-h-15 pie-xs-flex-12">
+													<h4>Быстрая продажа</h4>
+													<p><small>Бельэтаж</small></p>
+													<p><small>Ряд/ложа: 1</small></p>
+													<p><small>Место: 1,2,3</small></p>
+													<p>&NonBreakingSpace;</p>
+													<p>Большой театр</p>
+													<p>&NonBreakingSpace;</p>
+													<p>25 Июля, 20: 00</p>
+													<hr>
+													<div class="clearfix m-v-10">
+														<div class="col-xs-6 text-left color-4">
+															<p><big>-50%</big></p>
+														</div>
+														<div class="col-xs-6 text-right color-black">
+															<p><big><b>5 000 т.р</b></big></p>
+														</div>
+													</div>
+												</div>	
+											</div>
+										</div>
+										<div class="col-md-3 col-2 p-h-15">
+											<div class="wrapper shadow-default pie-flex-content">
+												<div class="panel-addadvert pie-md-flex-12 p-h-15 pie-xs-flex-12">
+										
+														<div class="btn-content-raise">
+															<span><button type="submit"><i class="fa fa-upload"></i><b>Поднять</b></button></span>
+														</div>
+														<div class="btn-content-activate">
+															<span><button type="submit"><i class="fa fa-refresh"></i><b>Активировать</b></button></span>
+														</div>
+														<div class="btn-content-edit">
+															<span><button type="submit"><i class="fa fa-pencil"></i><b>Редактировать</b></button></span>
+														</div>
+														<div class="btn-content-trash">
+															<span><button type="submit"><i class="fa fa-trash"></i><b>Снять с продажи</b></button></span>
+														</div>
+														<div class="btn-content-close p-t-10">
+															<span><button type="submit"><i class="fa fa-close"></i><b>Удалить</b></button></span>
+														</div>
+									
+												</div>	
+											</div>
+										</div>
+									</div>
+								</figure>
+
+							</form>
+						</div>
+						<div class="cabinet-userdata">
+							<h4 class="color-2">Личные данные</h4>
+							<div class="wrapper fc-border-color-1 col-md-5">
+								<form action="" method="get" accept-charset="utf-8">
+
+									<div class="m-v-15 clearfix row">
+										<div class="col-md-5 p-h-15 m-v-5">Имя</div>
+										<div class="col-md-7 p-h-15">
+											<input type="" name="" class="pie-form-control box-xs-10" placeholder="Имя">
+										</div>
+									</div>
+									<div class="m-v-15 clearfix row">
+										<div class="col-md-5 p-h-15 m-v-5">Телефон</div>
+										<div class="col-md-7 p-h-15">
+											<input type="" name="" class="pie-form-control box-xs-10" placeholder="Телефон">
+										</div>
+									</div>
+									<div class="m-v-15 clearfix row">
+										<div class="col-md-5 p-h-15 m-v-5">Почта</div>
+										<div class="col-md-7 p-h-15">
+											<input type="" name="" class="pie-form-control box-xs-10" placeholder="Почта">
+										</div>
+									</div>
+									<div class="m-v-15">										
+										<a href="" title="" class="color-1"><b>Изменить пароль</b></a>
+									</div>
+									<div class="m-v-15">										
+										<span class="btn-def inline-block"><button type="submit"><b>Сохранить изменения</b></button></span>
+									</div>
+
+								</form>
 							</div>
 						</div>
-						<!-- ./platform-article -->
+					</div>
+						
+
+
 					</div>
 				</div>
 				<hr class="dashed">
@@ -436,7 +600,7 @@
 							<div class="search-nav-content clearfix m-v-10 color-black">
 									<form action="">
 										<div class="col-md-12 search-input">
-											<input type="text" name="" id="" placeholder="Email" style="height: 32px;">
+											<input type="text" name="" placeholder="Email" style="height: 32px;">
 											<button type="submit" ><b>Подписаться</b></button>
 										</div>
 									</form>

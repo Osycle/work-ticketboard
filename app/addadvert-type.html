@@ -17,7 +17,6 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-
 <body>
 	<!-- Блок скрытых элементов -->
 	<div class="hide">
@@ -162,7 +161,7 @@
 							<input type="text" class="pie-form-control box-xs-10 m-v-5" placeholder="Телефон">
 							<input type="password" class="pie-form-control box-xs-10 m-v-5" placeholder="Пароль">
 							<input type="password" class="pie-form-control box-xs-10 m-v-5" placeholder="Повторите пароль">
-							<div class="captcha text-center input-btnin reverse m-v-15 clearfix">
+							<div class="captcha text-center input-btnin reverse m-v-15 clearfix row">
 								<img src="img/other/captcha.png" alt="">
 								<div class="col-md-12 search-input m-v-15">
 									<input type="text" name="" placeholder="Код с картинки" style="height: 32px;">
@@ -325,67 +324,137 @@
 						</div>
 					</div>
 					<div class="column-2 col-md-9 p-h-15">
-						<!-- breadcrumb-container -->
-						<div class="breadcrumb-container hidden-xs hidden-sm">
-							<ol class="breadcrumb p-h-0 m-b-0 m-t-15">
-								<li><a href="">Главная</a></li>
-								<li class="active"><a href="">Большой театр</a></li>
-							</ol>
-						</div>
-						<!-- platform-article -->
-						<div class="platform-article">
-							<div class="entry-header cleafix m-v-15 relative">
-								<div class="inline-block va-middle">
-									<h1 class="color-2">Большой театр</h1>
-									<p class="color-1">Москва ул. 123 з.123</p>
-								</div>
-								<div class="inline-block va-middle m-h-30 m-v-15">
-									<span class="btn-def">
-										<a href="img/other/schema.jpg" data-fancybox="">Схема зала</a>
-									</span>
-								</div>
-							</div>
+					<!-- breadcrumb-container -->
+					<div class="breadcrumb-container hidden-xs hidden-sm">
+						<ol class="breadcrumb p-h-0 m-b-0 m-t-15">
+							<li><a href="">Главная</a></li>
+							<li class="active"><a href="">Подать объявление</a></li>
+						</ol>
+					</div>
 
-							<div class="text-content text-left">
-								<div class="text-center-sm">
-									<b>Продавец:</b> Александр 
-									<span class="color-1 m-h-15 phone-content">
-										<a href="javascript:;" title="" data-hidephone="#article-phone">Показать телефон</a>
-										<span class="article-phone none" id="article-phone"><b>+99890 789 45 12</b></span>
-									</span> 
-									<div class="float-right-md">
-										<span class="color-4">-50% </span>&nbsp;&nbsp;<span class="color-1"><b>2 500 руб</b></span>
-									</div>
-								</div>
-								<div class="col-md-4 col-xs-12 article-img float-right-md p-v-30">
-									<!-- Ссылка на оригинальный размер картины-->
-									<a href="img/other/event.jpg" title="" data-fancybox>
-										<!-- Средний размер картины -->
-										<img src="img/other/event.jpg" alt="" align="right">
-									</a>
-								</div>
-								<br>
-								<p><b>Мероприятие:</b> Лебединое озеро</p>
-								<p><b>Дата:</b> 23 июля 2018</p>
-								<p><b>Время:</b> 19-00 </p>
-								<p><b>Сектор:</b> Бельэтаж</p>
-								<p><b>Ряд/ложа:</b> 5</p>
-								<p><b>Место:</b>3,5</p>
-								<br>
-								<p><b>Тип белета:</b> Пригласительный</p>
-								<p><b>Номинальная цена:</b> 5 000 руб.</p>
-								<p><b>Цена продажи:</b> 2 500 руб. </p>
-								<br>
-								<div class="m-v-15">
-									<p><b>Комментарии:</b> Стимулирование сбыта, как принято считать, традиционно тормозит медиамикс.</p>
-								</div>
-								<div class="m-v-15">
-									<p><b>Дата размещения: 06.07.2018 </b> <span class="float-right-md m-v-15"><b>Просмотров:7</b></span></p>
-								</div>
-									
-							</div>
+
+					<div class="addadvert-type">
+						<div class="entry-header">
+							<h3 class="color-2">Выберите пакет услуг</h3>
 						</div>
-						<!-- ./platform-article -->
+						<div class="addadvert-type-items col-md-11 figure-m-v-30">
+							<form action="" method="get" accept-charset="utf-8">
+								<figure>
+									<label class="va-middle p-r-5" for="addadvert-type-1" role="button">
+										<div class="wrapper shadow-default pie-flex-content">
+											<div class="desc-content pie-md-flex-11 p-h-15 pie-xs-flex-12">
+												<div class="cap">
+													<h4>Быстрая продажа</h4>
+													<p>Бесплатно</p>
+												</div>
+											</div>
+											<div class="radio-content pie-md-flex-1 text-center pie-xs-flex-12 p-v-30">
+												<input type="radio" class="hide" name="addadvert-type" id="addadvert-type-1">
+												<span class="radio-style-1"></span>
+											</div>		
+										</div>
+									</label>
+								</figure>
+								<figure>
+									<label class="va-middle p-r-5" for="addadvert-type-2" role="button">
+										<div class="wrapper shadow-default pie-flex-content">
+											<div class="img-content pie-md-flex-4 pie-xs-flex-12">
+												<div class="img" style="background-image: url('img/other/event.jpg');"></div>
+											</div>
+											<div class="desc-content pie-md-flex-7 p-h-15 pie-xs-flex-12">
+												<div class="cap">
+													<h4>Быстрая продажа</h4>
+													<p>x5 Просмотров</p>
+												</div>
+												<p>Стимулирование сбыта, как принято считать, традиционно тормозит медиамикс. Восприятие марки, анализируя результаты рекламной компании, деятельно. Поддерживает креатив.</p>
+												<div class="price p-v-10">
+													<big><b>600 руб</b></big>
+												</div>
+											</div>
+											<div class="radio-content pie-md-flex-1 text-center pie-xs-flex-12 p-v-30">
+												<input type="radio" class="hide" name="addadvert-type" id="addadvert-type-2">
+												<span class="radio-style-1"></span>
+											</div>		
+										</div>
+									</label>
+								</figure>
+								<figure>
+									<label class="va-middle p-r-5" for="addadvert-type-3" role="button">
+										<div class="wrapper shadow-default pie-flex-content">
+											<div class="img-content pie-md-flex-4 pie-xs-flex-12">
+												<div class="img" style="background-image: url('img/other/event.jpg');"></div>
+											</div>
+											<div class="desc-content pie-md-flex-7 p-h-15 pie-xs-flex-12">
+												<div class="cap">
+													<h4>Быстрая продажа</h4>
+													<p>x5 Просмотров</p>
+												</div>
+												<p>Стимулирование сбыта, как принято считать, традиционно тормозит медиамикс. Восприятие марки, анализируя результаты рекламной компании, деятельно. Поддерживает креатив.</p>
+												<div class="price p-v-10">
+													<big><b>600 руб</b></big>
+												</div>
+											</div>
+											<div class="radio-content pie-md-flex-1 text-center pie-xs-flex-12 p-v-30">
+												<input type="radio" class="hide" name="addadvert-type" id="addadvert-type-3">
+												<span class="radio-style-1"></span>
+											</div>		
+										</div>
+									</label>
+								</figure>
+								<figure>
+									<label class="va-middle p-r-5" for="addadvert-type-4" role="button">
+										<div class="wrapper shadow-default pie-flex-content">
+											<div class="img-content pie-md-flex-4 pie-xs-flex-12">
+												<div class="img" style="background-image: url('img/other/event.jpg');"></div>
+											</div>
+											<div class="desc-content pie-md-flex-7 p-h-15 pie-xs-flex-12">
+												<div class="cap">
+													<h4>Быстрая продажа</h4>
+													<p>x5 Просмотров</p>
+												</div>
+												<p>Стимулирование сбыта, как принято считать, традиционно тормозит медиамикс. Восприятие марки, анализируя результаты рекламной компании, деятельно. Поддерживает креатив.</p>
+												<div class="price p-v-10">
+													<big><b>600 руб</b></big>
+												</div>
+											</div>
+											<div class="radio-content pie-md-flex-1 text-center pie-xs-flex-12 p-v-30">
+												<input type="radio" class="hide" name="addadvert-type" id="addadvert-type-4">
+												<span class="radio-style-1"></span>
+											</div>		
+										</div>
+									</label>
+								</figure>
+								<figure>
+									<label class="va-middle p-r-5" for="addadvert-type-5" role="button">
+										<div class="wrapper shadow-default pie-flex-content">
+											<div class="img-content pie-md-flex-4 pie-xs-flex-12">
+												<div class="img" style="background-image: url('img/other/event.jpg');"></div>
+											</div>
+											<div class="desc-content pie-md-flex-7 p-h-15 pie-xs-flex-12">
+												<div class="cap">
+													<h4>Быстрая продажа</h4>
+													<p>x5 Просмотров</p>
+												</div>
+												<p>Стимулирование сбыта, как принято считать, традиционно тормозит медиамикс. Восприятие марки, анализируя результаты рекламной компании, деятельно. Поддерживает креатив.</p>
+												<div class="price p-v-10">
+													<big><b>600 руб</b></big>
+												</div>
+											</div>
+											<div class="radio-content pie-md-flex-1 text-center pie-xs-flex-12 p-v-30">
+												<input type="radio" class="hide" name="addadvert-type" id="addadvert-type-5">
+												<span class="radio-style-1"></span>
+											</div>		
+										</div>
+									</label>
+								</figure>
+
+								
+							</form>
+						</div>
+					</div>
+						
+
+
 					</div>
 				</div>
 				<hr class="dashed">
@@ -436,7 +505,7 @@
 							<div class="search-nav-content clearfix m-v-10 color-black">
 									<form action="">
 										<div class="col-md-12 search-input">
-											<input type="text" name="" id="" placeholder="Email" style="height: 32px;">
+											<input type="text" name="" placeholder="Email" style="height: 32px;">
 											<button type="submit" ><b>Подписаться</b></button>
 										</div>
 									</form>
