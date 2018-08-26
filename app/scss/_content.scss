@@ -118,30 +118,35 @@
 
 //--bnr-info
 .bnr-info{
-	$block-height: 180px;
+	$block-height: 200px;
 	position: relative;
 	.pie-flex-center{
 		height: $block-height;
 	}
 	.img-content{
+		    height: 100%;
 		width: 100%;
 		position: absolute;
+	}
+	.img{
+		transition: all 0.3s steps(30);
+		height: $block-height;
+		background-size: cover;
+		background-position: center;
+	}
+	.desc-content{
+		padding-top: 15px;
+		padding-bottom: 15px;
 	}
 	&:hover{
 		.img{
 			filter: blur(3px);
 		}
 	}
-	.img{
-		transition: all 0.3s steps(4);
-		height: $block-height;
-		background-size: cover;
-		background-position: center;
-	}
 	@media (max-width:991px) {
 		height: auto;
 		.pie-flex-center, .img{
-			height: 360px;
+			height: 100%;
 		}
 		.img{
 			filter: blur(3px);
@@ -149,24 +154,35 @@
 	}
 }
 .bnr-info-article{
-	$block-height: 400px;
+	$block-height: 200px;
 	position: relative;
 	.pie-flex-center{
 		height: $block-height;
 	}
 	.img-content{
 		width: 100%;
+		height: 100%;
 		position: absolute;
 	}
 	.img{
+		transition: all 0.3s steps(30);
 		height: $block-height;
 		background-size: cover;
 		background-position: center;
 	}
+	.desc-content{
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	&:hover{
+		.img{
+			filter: blur(3px);
+		}
+	}
 	@media (max-width:991px) {
 		height: auto;
 		.pie-flex-center, .img{
-			height: 360px;
+			height: 100%;
 		}
 		.img{
 			filter: blur(3px);
