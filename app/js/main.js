@@ -330,7 +330,8 @@
 		})
 
 		$("[data-hidephone]").on("click", function(e){
-			$($(this).attr("data-hidephone")).show()
+			$($(this).attr("data-hidephone")).show();
+			$(this).hide();
 		})
 
 
