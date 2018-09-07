@@ -677,21 +677,31 @@
 	<script src="js/scripts.min.js"></script>
 	<script src="js/main.js"></script>
 	<script>
-	    window.onload = function(){
-	      
-	        console.log(this);
-	        //Календарь
-	        $("#datepicker").datepicker({
-	            dateFormat: "yy-mm-dd",
-	            minDate: "0d",
-	            onSelect: function(dateText, inst) {
-	                console.log(dateText, inst);
-	                window.location = "/index.html/" + dateText;
-	            }
-	        });
-	        
-
-    }
+window.onload = function(){
+            
+            function markDays(date) {
+                return [true, 'with-date ' + $.datepicker.formatDate('dd-mm-yy', date)];
+            }
+          
+            var $datepicker = $("#datepicker");
+            
+            $datepicker.on('mouseover', '.with-date', function () {
+                var dateText = $(this).attr('class').match(/\d+-\d+-\d+/)[0];
+                $(this).find('a').attr('href', "{/literal}{$SITE_URL}{literal}/calendar/?date=" + dateText);
+            });
+            
+            $datepicker.datepicker({
+                beforeShowDay: markDays,
+                dateFormat: "dd-mm-yy",
+                minDate: "0d",
+                onSelect: function (selectedDate) {
+                    //console.log("{/literal}{$SITE_URL}{literal}/calendar/?date=" + selectedDate);
+                    window.location = "{/literal}{$SITE_URL}{literal}/calendar/?date=" + selectedDate;
+                    
+                    
+                }
+            });
+        }
   </script>
 </body>
 
