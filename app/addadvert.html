@@ -341,12 +341,12 @@
 								<div class="addadvert-form-content row form-select-opacity cleafix fc-border-color-1">
 									<div class="col-md-6 p-h-15">
 
-										<form action="" method="get" accept-charset="utf-8">
+										<form action="test.php" accept-charset="utf-8" enctype="multipart/form-data" method="POST">
 
 												<div class="m-v-15 clearfix row">
 													<div class="col-md-5 p-h-15">Город</div>
 													<div class="col-md-7 p-h-15">
-														<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+														<select name="name-1" class="js-select box-xs-10 search-hide pie-form-control">
 															<option value="">Москва</option>
 															<option value="">Москва 2</option>
 															<option value="">Москва 3</option>
@@ -356,7 +356,7 @@
 												<div class="m-v-15 clearfix row">
 													<div class="col-md-5 p-h-15">Площадка</div>
 													<div class="col-md-7 p-h-15">
-														<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+														<select name="name-2" class="js-select box-xs-10 search-hide pie-form-control">
 															<option value=""></option>
 															<option value="">Пункт 1</option>
 															<option value="">Пункт 2</option>
@@ -370,14 +370,14 @@
 												<div class="m-v-15 clearfix row">
 													<div class="col-md-5 p-h-15">Дата</div>
 													<div class="col-md-7 p-h-15">
-														<input type="" name=""  id="datepicker-select" class="pie-form-control col-xs-7" onchange="$(this).attr('value', $(this).val());">
+														<input type="" name="name-3"  id="datepicker-select" class="pie-form-control col-xs-7" onchange="$(this).attr('value', $(this).val());">
 													</div>
 												</div>
 
 												<div class="m-v-15 clearfix row">
 													<div class="col-md-5 p-h-15">Мероприятия</div>
 													<div class="col-md-7 p-h-15">
-														<select name="" class="js-select box-xs-10 search-hide pie-form-control">
+														<select name="name-4" class="js-select box-xs-10 search-hide pie-form-control">
 															<option value=""></option>
 															<option value="">Пункт 1</option>
 															<option value="">Пункт 2</option>
@@ -387,7 +387,7 @@
 												<div class="m-v-15 clearfix row">
 													<div class="col-md-5 p-h-15">Время</div>
 													<div class="col-md-7 p-h-15">
-														<select name="" class="js-select col-xs-3 search-hide pie-form-control">
+														<select name="name-5" class="js-select col-xs-3 search-hide pie-form-control">
 															<option value="00">00</option>
 															<option value="01">01</option>
 															<option value="02">02</option>
@@ -415,7 +415,7 @@
 															<option value="24">24</option>
 														</select>
 														 <big>:</big>
-														<select name="" class="js-select col-xs-3 search-hide pie-form-control">
+														<select name="name-6" class="js-select col-xs-3 search-hide pie-form-control">
 															<option value="">00</option>
 															<option value="">01</option>
 															<option value="">02</option>
@@ -530,7 +530,7 @@
 												<div class="m-v-15 clearfix row">
 													<div class="col-md-5 p-h-15">
 														<div class="btn-file-content m-v-15">
-															<input type="file" name="" id="file-1" class="inputfile box-xs-10" onchange="this.nextElementSibling.getElementsByClassName('file-1-name')[0].textContent = this.files[0].name">
+															<input type="file" name="file" id="file-1" class="inputfile box-xs-10" onchange="this.nextElementSibling.getElementsByClassName('file-1-name')[0].textContent = this.files[0].name">
 															<label for="file-1" role="button">
 																<span class="btn-def over-hidden">
 																	 <b class="btn-this file-1-name">Загрузить фото</b>
@@ -544,7 +544,7 @@
 														<p class="m-v-15">Комментарии</p>
 													</div>
 													<div class="col-md-7 p-h-15">
-														<textarea name="" class="pie-form-control box-md-10" style="height: 150px;"></textarea>
+														<textarea name="text" class="pie-form-control box-md-10" style="height: 150px;"></textarea>
 													</div>
 												</div>
 												<div class="m-v-15 clearfix row">
