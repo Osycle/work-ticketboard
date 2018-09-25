@@ -5,6 +5,7 @@
 
 
 
+
 		/*AOS*/
 		AOS.init({
 			offset: 100,
@@ -83,6 +84,15 @@
       showOn: "button",
       buttonText: "<i class='fa fa-calendar'></i>"
     });
+
+    var schemaBtn = $(".platform-article .btn-def [data-fancybox]") || null;
+    if( schemaBtn )
+			$(".platform-article .hide [data-fancybox]").map(function( i, el ){
+				 if( schemaBtn.attr("href") == $(el).attr("href") )
+				 	$(el).remove()
+				console.log( schemaBtn.attr("href") == $(el).attr("href") );
+			})
+
 		/*FANCYBOX*/
 		if ($("[data-fancybox]").length != 0)
 			$("[data-fancybox]").fancybox({
@@ -347,8 +357,6 @@
 			}
 
 		}
-
-
 
 
 
